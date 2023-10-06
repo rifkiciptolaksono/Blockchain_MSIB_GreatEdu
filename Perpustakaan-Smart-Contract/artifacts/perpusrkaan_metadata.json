@@ -1,0 +1,295 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "isbn",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "_Judul",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "Nama_penulis",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint16",
+						"name": "tahun_terbit",
+						"type": "uint16"
+					}
+				],
+				"name": "addBuku",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "id",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"name": "addadmin",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "isbn",
+						"type": "uint256"
+					}
+				],
+				"name": "deleteBuku",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "isbn",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "Judul_baru",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "Nama_penulis_baru",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint16",
+						"name": "tahun_terbit_baru",
+						"type": "uint16"
+					}
+				],
+				"name": "updateBuku",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_isbn",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_judul",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "Nama_penulis",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16",
+						"name": "tahun_terbit",
+						"type": "uint16"
+					}
+				],
+				"name": "addbuku",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "admin",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "buku",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "isbn",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "Judul",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "penulis",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16",
+						"name": "tahun_terbit",
+						"type": "uint16"
+					},
+					{
+						"internalType": "bool",
+						"name": "benar",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_isbn",
+						"type": "uint256"
+					}
+				],
+				"name": "delatebuku",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_isbn",
+						"type": "uint256"
+					}
+				],
+				"name": "getbuku",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "Judul",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "penulis",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16",
+						"name": "tahun_terbit",
+						"type": "uint16"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_isbn",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "Judul_baru",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "Nama_penulis_baru",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16",
+						"name": "tahun_terbit_baru",
+						"type": "uint16"
+					}
+				],
+				"name": "updatebuku",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"perpustakaan.sol": "perpusrkaan"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"perpustakaan.sol": {
+			"keccak256": "0xa654959d759f894019bfde7b8d4664ac9fb06470fde90aed7c8f1b8f939ea874",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8dbda47fbbdbca83c8fc27b3b709bdb4e106d62a7fd8865f00331c0ce4de044b",
+				"dweb:/ipfs/QmbUvegHMaKASh1wqYz8Gp31PCEmGwjb8W6SyAq16ob6mX"
+			]
+		}
+	},
+	"version": 1
+}
